@@ -378,13 +378,12 @@ em Green Shoes até agora. Uma barra de rolagem aparecerá automaticamente, mas 
  end
 }}}
 
-==== Image and Shape Blocks ====
+==== Blocos de Imagens e Formas ====
 
-Most beginners start littering the window with shapes.  It's just easier to
-throw all your rectangles and ovals in a slot.
+A maioria dos iniciantes começa enchendo a tela com retângulos e círculos.  É muito mais fácil colocar estes
+retângulos e círculos num bloco.
 
-'''However, bear in mind that Shoes will create objects for all those
-shapes!'''
+'''No entanto, tenha sempre em mente que o Shoes vai criar objetos para todos estes objetos de formas!'''
 
 {{{
  Shoes.app do
@@ -395,8 +394,8 @@ shapes!'''
  end
 }}}
 
-In this example, one-hundred Oval objects are created.  This isn't too bad.
-But things would be slimmer if we made these into a single shape.
+Neste exemplo, cem objetos ovais são criados.  Isto não é tão ruim.
+Mas as coisas podem ser mais "econômicas" se fizessemos isso num único objeto de "forma".
 
 {{{
  # Not yet available
@@ -410,14 +409,13 @@ But things would be slimmer if we made these into a single shape.
  end
 }}}
 
-Oh, wait.  The ovals aren't filled in this time!  That's because the ovals have
-been combined into a single huge shape.  And Shoes isn't sure where to fill in
-this case.
+Opa, um momento.  Os objsetos ovais não foram preenchidos desta vez!  Isto é devido ao fato de os objetos ovais
+terem sido combinados num único objeto "forma" maior.  E o Shoes não tem certeza onde preencher neste caso.
 
-So you usually only want to combine into a single shape when you're dealing
-strictly with outlines.
+Portanto, você normalmente só vai combinar objetos num único objeto forma quando se tratar
+apenas do contorno de uma forma.
 
-Another option is to combine all those ovals into a single image.
+Uma outra opção é cobinar todos estes objetos ovais numa única imagem.
 
 {{{
  # Not yet available
@@ -431,17 +429,19 @@ Another option is to combine all those ovals into a single image.
  end
 }}}
 
-There we go!  The ovals are all combined into a single 300 x 300 pixel image.
-In this case, storing that image in memory might be much bigger than having
-one-hundred ovals around.  But when you're dealing with thousands of shapes,
-the image block can be cheaper.
+Aqui vamos nós!  Os objetos ovais são todos combinados numa única 
+imagem de 300 x 300 pixels.
+Neste caso, armazenar este imagem em memória pode consumir mais 
+recursos do que lidar com 100 objetos ovais.
+Mas quando você estiver lidando com várias centenas de objetos de forma, 
+o bloco de imagem pode consumir menos recursos.
 
-The point is: it's easy to group shapes together into image or shape blocks, so
-give it a try if you're looking to gain some speed.  Shape blocks particularly
-will save you some memory and speed.
+O ponto é: é mais fácil agrupar objetos de forma em blocos de imagens ou de formas,
+portanto, faça esta experiência se você estiver buscando um pouco mais de velocidade.
+Blocos de forma em particular vão usar menos memória e aumentar a velocidade.
 
-'''NOTE''': Green Shoes doesn't support this magic (grouping shapes together
-into image or shape blocks) so far.
+'''NOTA''': O Green Shoes não dá suporte a esta "magia" (agrupar formas usando
+blocos de forma ou imagens) até o momento.
 
 ==== UTF-8 Everywhere ====
 
