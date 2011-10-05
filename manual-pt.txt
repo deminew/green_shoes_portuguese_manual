@@ -395,7 +395,7 @@ retângulos e círculos num bloco.
 }}}
 
 Neste exemplo, cem objetos ovais são criados.  Isto não é tão ruim.
-Mas as coisas podem ser mais "econômicas" se fizessemos isso num único objeto de "forma".
+Mas as coisas poderiam ser mais "econômicas" se fizessemos isso num único objeto de "forma".
 
 {{{
  # Not yet available
@@ -409,7 +409,7 @@ Mas as coisas podem ser mais "econômicas" se fizessemos isso num único objeto 
  end
 }}}
 
-Opa, um momento.  Os objsetos ovais não foram preenchidos desta vez!  Isto é devido ao fato de os objetos ovais
+Opa, um momento.  Os objetos ovais não foram preenchidos desta vez!  Isto é devido ao fato de os objetos ovais
 terem sido combinados num único objeto "forma" maior.  E o Shoes não tem certeza onde preencher neste caso.
 
 Portanto, você normalmente só vai combinar objetos num único objeto forma quando se tratar
